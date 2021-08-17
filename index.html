@@ -46,26 +46,27 @@
       <div class="about__left">
         <img src="imgs/profile.png" alt="so-young's profile photo" class="home__avatar">
       </div>
-      <br class="about__right">
-        <h4>
-          <strong>정소영</strong>
-        </br>
-          Jeong So Young
-        </h4>
-        <p>1995 01 17 서울 출생</p>
-        <p>2010 - 2013 광신정보산업고등학교 멀티미디어컨텐츠과 졸업</p>
-        <p>2013 - 2015 노무법인 화우로 근무</p>
-        <p>2015 - 2016 솔트에셋 근무</p>
-        <p>2018 - 2018 더프라임베스트먼트 근무</p>
-        <p>2016 - 2021 인하공업전문대학 호텔경영과 졸업</p>
-        <p>2021 - 2021 KH정보교육원 (웹기반 빅데이터 활용 전문 개발자 양성과정) 4개월 교육</p>    
-      </br>
-        <p>2012.05 ITQ 한글 엑셀</p>
-        <p>2013.06 전산회계 2급</p>
-        <p>2017.05 CPR</p>
-        <p>2020.04 컴퓨터그래픽스운용기능사 필기</p>
+      <div class="about__right">
+        <div class="about__categories">
+          <button class="category__btn">Career</button>
+          <button class="category__btn">License</button>
+        </div>
+        <div class="about__career" data-type="Career">
+          <p>1995 01 17 서울 출생</p>
+          <p>2010 - 2013 광신정보산업고등학교 멀티미디어컨텐츠과 졸업</p>
+          <p>2013 - 2015 노무법인 화우로 근무</p>
+          <p>2015 - 2016 솔트에셋 근무</p>
+          <p>2018 - 2018 더프라임베스트먼트 근무</p>
+          <p>2016 - 2021 인하공업전문대학 호텔경영과 졸업</p>
+          <p>2021 - 2021 KH정보교육원 (웹기반 빅데이터 활용 전문 개발자 양성과정) 4개월 교육</p>    
+        </div>
+        <div class="about__license" data-type="License">
+          <p>2012.05 ITQ 한글 엑셀</p>
+          <p>2013.06 전산회계 2급</p>
+          <p>2017.05 CPR</p>
+          <p>2020.04 컴퓨터그래픽스운용기능사 필기</p>
+        </div>
       </div>
-      
     </div>
   </section>
 
@@ -151,7 +152,40 @@
     </div>
   </section>
   <!-- Work -->
-  <section id="work"></section>
+  <section id="work">
+    <h1>My work</h1>
+    <h3>Projects</h3>
+    <div class="work__projects">
+      <a href="#" class="project" target="blank">
+      <img class="project__img" src="imgs/projects/test1.jpg" alt="LearnWay">
+      <div class="project__description">
+        <h3>LearnWay Site</h3>
+        <span>Semi project with HTML, CSS, Jquery, JAVA(JSP)</span>
+      </div>
+    </a>
+    <a href="#" class="project" target="blank">
+      <img class="project__img" src="imgs/projects/test2.jpg" alt="AirBnB">
+      <div class="project__description">
+        <h3>AirBnB Site</h3>
+        <span>Clone coding with HTML and CSS</span>
+      </div>
+    </a>
+    <a href="#" class="project" target="blank">
+      <img class="project__img" src="imgs/projects/test3.jpg" alt="ToDoList">
+      <div class="project__description">
+        <h3>ToDoList</h3>
+        <span>HTML, CSS, Vanilla Js</span>
+      </div>
+    </a>
+    <a href="#" class="project" target="blank">
+      <img class="project__img" src="imgs/projects/test4.jpg" alt="portfolio">
+      <div class="project__description">
+        <h3>LearnWay Site</h3>
+        <span>HTML, CSS, Java Script</span>
+      </div>
+    </a>
+    </div>
+  </section>
   <!-- Contact -->
   <section id="contact"></section>
 </body>
