@@ -8,17 +8,19 @@
   <title>Soyoung's portfolio</title>
   <meta name="description" content="Web publisher Portfolio">
   <meta name="author" content="So-young">
-  <link rel="icon" type="image/png" href="imgs/favicon_img.png" />
+  <link rel="icon" type="image/png" href="imgs/favicon__img.png" />
   <script src="https://kit.fontawesome.com/9b7675f701.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  </style> 
 </head>
 <body>
   <!-- Navbar -->
   <nav id="navbar">
     <div class="navbar__logo">
-      <i class="fas fa-splotch"></i>
+      <i class="fas fa-cloud"></i>
       <a href="#">So young</a>
     </div>
     <div class="navbar__menu">
@@ -47,17 +49,17 @@
         <img src="imgs/profile.png" alt="so-young's profile photo" class="home__avatar">
       </div>
       <div class="about__right">
-        <p id="about__name">Jeong So-young</p>
-        <p>1995 01 17 서울 출생</p>
+        <p class="about__title">Jeong so-young</p>
+        <p>1995년 1월 17일 서울 출생</p>
         <br/>
         <div class="about__career">
           <p class="about__title">Career</p>
-          <p>2010 - 2013 광신정보산업고등학교 멀티미디어컨텐츠과 졸업</p>
           <p>2013 - 2015 노무법인 화우로 근무</p>
           <p>2015 - 2016 솔트에셋 근무</p>
           <p>2018 - 2018 더프라임베스트먼트 근무</p>
           <p>2016 - 2021 인하공업전문대학 호텔경영과 졸업</p>
-          <p>2021 - 2021 KH정보교육원 (웹기반 빅데이터 활용 전문 개발자 양성과정) 4개월 교육</p>
+          <p>2021 - 2021 KH정보교육원 4개월 교육</p>
+          <p>(웹기반 빅데이터 활용 전문 개발자 양성과정) </p>
         </div>
         <div class="about__license">
           <p class="about__title">License</p>
@@ -174,7 +176,7 @@
       </div>
     </a>
     <a href="#" class="project" target="blank">
-      <img class="project__img" src="imgs/projects/test3.jpg" alt="ToDoList">
+      <img class="project__img" src="imgs/projects/img_todolist.PNG" alt="ToDoList">
       <div class="project__description">
         <h3>ToDoList</h3>
         <span>HTML, CSS, Vanilla Js</span>
@@ -192,15 +194,25 @@
 
   <!-- Contact -->
   <section id="contact" class="section">
-    <h1 class="contact__title">Let's talk</h1>
-    <h2 class="contact__email">cpujeongso@naver.com</h2>
-    <div class="contact__links">
-      <a href="https://github.com/hellojeongso" target="blank">
-        <i class="fab fa-github"></i>
-      </a>
+    <div class="contact__set">
+    <div class="contact__epilogue">
+      <h2 class="contact__title">EPILOGUE</h1> 
+      <p>에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그
+        에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그에필로그 
+      </p>
     </div>
+    <div class="contact__talk">
+      <h2 class="contact__title">Let's talk</h2>
+      <h3 class="contact__email"><i class="fas fa-envelope"></i> cpujeongso@naver.com</h3>
+      <h3 class="contact__phone"><i class="fas fa-phone-alt"></i> +82 010 3003 5375</h3>
+      <div class="contact__links">
+        <a href="https://github.com/hellojeongso" target="blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
     <p class="contact__rights">2021 Jeong So-young portfolio - All rights reserved</p>
   </section>
 </body>
-
 </html>
