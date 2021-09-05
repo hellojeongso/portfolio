@@ -134,11 +134,22 @@ p {
   background-color: var(--color-dark-blue);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
 /* Home */
 #home {
   background: url("imgs/home_background.png") center/cover no-repeat;
   padding: 230px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home__title {
@@ -273,6 +284,10 @@ p {
   background-color: var(--color-light-white);
 }
 
+#work h1 {
+  color: var(--color-deep-blue);
+}
+
 .project__img {
   max-width: 100%;
   max-height: 100%;
@@ -356,4 +371,56 @@ p {
 .contact__phone,
 .contact__email {
   cursor: pointer;
+}
+
+.contact__rights {
+  padding-top: 25px;
+}
+
+/* 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .home__title {
+    font-size: 40px;
+  }
+
+  .home__description {
+    font-size: 20px;
+  }
+  .aboutset {
+    flex-direction: column;
+  }
+
+  .about__left {
+    margin-bottom: 25px;
+  }
+
+  .home__avatar {
+    width: 300px;
+    height: 300px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
 }
