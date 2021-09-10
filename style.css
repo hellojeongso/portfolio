@@ -102,12 +102,20 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-deep-blue);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 7px 20px;
+  transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-deep-blue);
 }
 
 .navbar__menu {
@@ -268,6 +276,10 @@ p {
 }
 
 /* Work */
+
+#work {
+  margin-bottom: 70px;
+}
 .work__projects {
   display: flex;
   flex-wrap: wrap;
@@ -336,6 +348,10 @@ p {
 
 .contact__set {
   display: flex;
+}
+
+.contact__epilogue {
+  padding: 0px 50px;
 }
 
 .contact__epilogue,
