@@ -23,9 +23,18 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
-  
+
+  navbarMenu.classList.remove('open');  // 창닫기
   ScrollIntoView(link);
 });
+
+// Navbar toggle btn for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+
 
 // Handle contact Me
 const contactMeBtn = document.querySelector('.home__contact');
@@ -55,6 +64,10 @@ document.addEventListener('scroll', () => {
 arrowUp.addEventListener('click', () => {
   ScrollIntoView('#home');
 });
+
+
+
+
 
 function ScrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
