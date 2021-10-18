@@ -66,10 +66,9 @@ arrowUp.addEventListener('click', () => {
 });
 
 
-
-
-
 function ScrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior:'smooth'});
 }
+  
+

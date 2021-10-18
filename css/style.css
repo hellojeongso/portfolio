@@ -149,7 +149,7 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/home_background.png") center/cover no-repeat;
+  background: url("../imgs/home_background.png") center/cover no-repeat;
   padding: 200px;
   text-align: center;
 }
@@ -162,14 +162,41 @@ p {
 .home__contact {
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
-  margin: 24px;
-  padding-left: 8px 12px;
+  color: var(--color-light-white);
   border: 2px solid var(--color-dark-grey);
   border-radius: var(--size-border-radius);
+  text-align: center;
+  padding: 10px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.home__contact:hover {
-  background-color: var(--color-dark-white);
+.home__contact span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home__contact span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.home__contact:hover span {
+  padding-right: 25px;
+}
+
+.home__contact:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /* Section common */
@@ -287,7 +314,6 @@ p {
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-light-white);
 }
 
 #work h1 {

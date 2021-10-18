@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +8,18 @@
   <meta name="description" content="Web publisher Portfolio">
   <meta name="author" content="So-young">
   <link rel="icon" type="image/png" href="imgs/favicon__img.png" />
+  <script src="js/main.js" defer></script>
+  <script src="js/custom.js" defer></script>
+  <!-- typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/9b7675f701.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css" />
-  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="css/style.css" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
   </style> 
 </head>
-<body>
+<body>  
   <!-- Navbar -->
   <nav id="navbar">
     <div class="navbar__logo">
@@ -39,11 +42,11 @@
 
   <!-- Home -->
   <section id="home">
-    <h1 class="home__title">WELCOME TO MY PORTFOLIO </h1>
+    <h1><span class="typed"></span></h1>
     <h2 class="home__description">
       정소영 포트폴리오 
     </h2>
-    <button class="home__contact" data-link="#contact">Contact Me</button>
+    <button class="home__contact" data-link="#contact"><span>Contact Me </span></button>
   </section>
 
   <!-- About -->
@@ -166,17 +169,31 @@
     <h1>My work</h1>
     <div class="work__projects">
       <a href="#" class="project" target="blank">
-      <img class="project__img" src="imgs/projects/test1.jpg" alt="LearnWay">
+      <img class="project__img" src="imgs/projects/learnway_image.png" alt="LearnWay">
       <div class="project__description">
         <h3>LearnWay Site</h3>
         <span>Semi project with HTML, CSS, Jquery, JAVA(JSP)</span>
       </div>
     </a>
     <a href="#" class="project" target="blank">
-      <img class="project__img" src="imgs/projects/test2.jpg" alt="AirBnB">
+      <img class="project__img" src="imgs/projects/airbnb.png" alt="AirBnB">
       <div class="project__description">
         <h3>AirBnB Site</h3>
         <span>Clone coding with HTML and CSS</span>
+      </div>
+    </a>
+    <a href="#" class="project" target="blank">
+      <img class="project__img" src="imgs/projects/squid.png" alt="portfolio">
+      <div class="project__description">
+        <h3>Squid</h3>
+        <span>HTML, CSS</span>
+      </div>
+    </a>
+    <a href="#" class="project" target="blank">
+      <img class="project__img" src="imgs/projects/starbucks.png" alt="portfolio">
+      <div class="project__description">
+        <h3>Starbucks Clone coding</h3>
+        <span>HTML5, CSS</span>
       </div>
     </a>
     <a href="#" class="project" target="blank">
@@ -184,13 +201,6 @@
       <div class="project__description">
         <h3>ToDoList</h3>
         <span>HTML, CSS, Vanilla Js</span>
-      </div>
-    </a>
-    <a href="#" class="project" target="blank">
-      <img class="project__img" src="imgs/projects/test4.jpg" alt="portfolio">
-      <div class="project__description">
-        <h3>Portfolio</h3>
-        <span>HTML, CSS, Java Script</span>
       </div>
     </a>
     </div>
