@@ -277,7 +277,7 @@ p {
   border-radius: 30px;
   width: 30px;
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .about__profile > ul > li > p {
@@ -286,7 +286,7 @@ p {
 
 .li__one {
   font-size: var(--font-regular);
-  padding-top: 85px;
+  padding-top: 88px;
 }
 
 .li__two {
@@ -447,18 +447,20 @@ p {
 #work {
   margin-bottom: 70px;
 }
+
 .work__projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .project {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 280px;
-  height: 250px;
+  width: 400px;
+  height: 350px;
   margin: 2px;
 }
 
@@ -484,6 +486,7 @@ p {
   opacity: 0;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
+  padding: 20px;
 }
 
 .project__description h3 {
@@ -505,6 +508,11 @@ p {
 .project:hover .project__description {
   opacity: 0.8;
   transform: translateY(0px);
+}
+
+.hashtag {
+  padding-top: 14px;
+  font-weight: var(--weight-bold);
 }
 
 /* Contact */
@@ -574,7 +582,7 @@ p {
     --font-large: 25px;
     --font-regular2: 16px;
     --font-medium: 15px;
-    --font-regular: 14px;
+    --font-regular: 18px;
     --font-small: 11px;
     --font-micro: 10px;
   }
