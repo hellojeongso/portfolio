@@ -47,7 +47,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   cursor: default;
 }
 
@@ -163,7 +163,7 @@ p {
 /* Home */
 #home {
   background: url("../imgs/cloud.jpg") center/cover no-repeat;
-  padding: 200px;
+  padding: 200px 0 200px 0;
   text-align: center;
 }
 
@@ -726,11 +726,12 @@ p {
   }
 
   /* Scroll */
+
   .arrow-up {
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-    line-height: 40px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
     right: 16px;
     bottom: 16px;
   }
@@ -741,8 +742,8 @@ p {
     /* Font size */
     --font-large: 35px;
     --font-medium: 22px;
-    --font-medi-regular: 15px;
-    --font-regular: 12px;
+    --font-medi-regular: 17px;
+    --font-regular: 14px;
     --font-small: 10px;
     --font-micro: 8px;
   }
@@ -757,11 +758,42 @@ p {
 
   .home__contact {
     margin-top: 32px;
+    font-size: var(--font-regular);
   }
 
+  #li__title {
+    font-size: var(--font-medium);
+  }
   .li__one,
   .li__two,
   .li__three {
     font-size: var(--font-medi-regular);
+  }
+
+  .li__one {
+    padding-top: 100px;
+  }
+
+  .li__two {
+    padding-top: 0px;
+    margin: 0px;
+  }
+
+  .li__three {
+    padding-top: 65px;
+  }
+
+  .skillset__title,
+  .skill__description > span,
+  .tools__list > li > span,
+  .etc__list > li > span {
+    font-size: var(--font-medi-regular);
+  }
+
+  .project__description > h3 {
+    font-size: var(--font-medi-regular);
+  }
+  .contact__rights {
+    font-size: var(--font-regular);
   }
 }
