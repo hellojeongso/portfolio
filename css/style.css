@@ -716,6 +716,10 @@ p {
   }
 
   /* Contact */
+  #contact {
+    padding-bottom: 30px;
+  }
+
   .contact__title {
     font-size: 25px;
   }
@@ -749,7 +753,7 @@ p {
   }
 
   .navbar__logo {
-    font-size: var(--font-regular);
+    font-size: var(--font-medi-regular);
   }
 
   #home {
