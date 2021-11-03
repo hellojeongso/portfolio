@@ -561,9 +561,8 @@ p {
   width: 70px;
   height: 70px;
   font-size: 50px;
-  background-color: var(--color-right-blue);
-  color: var(--color-white);
-  border-radius: 50%;
+  color: var(--color-black);
+  background-color: transparent;
   opacity: 0;
   pointer-events: none;
   transition: opacity 300ms ease-in;
@@ -681,7 +680,7 @@ p {
 
   .li__one {
     font-size: var(--font-regular);
-    padding-top: 110px;
+    padding: 85px 13px 0 13px;
   }
   .li__two {
     font-size: var(--font-regular);
@@ -728,12 +727,8 @@ p {
   /* Scroll */
 
   .arrow-up {
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    line-height: 50px;
-    right: 16px;
-    bottom: 16px;
+    background-color: transparent;
+    color: black;
   }
 }
 
@@ -748,8 +743,17 @@ p {
     --font-micro: 8px;
   }
 
+  .navbar__logo {
+    font-size: var(--font-medi-regular);
+  }
+
   .home-title {
     height: 24vh;
+  }
+
+  .home-title > h1 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .typed {
