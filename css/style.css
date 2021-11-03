@@ -680,7 +680,7 @@ p {
 
   .li__one {
     font-size: var(--font-regular);
-    padding: 85px 13px 0 13px;
+    padding-top: 113px;
   }
   .li__two {
     font-size: var(--font-regular);
@@ -729,6 +729,11 @@ p {
   .arrow-up {
     background-color: transparent;
     color: black;
+    bottom: 15px;
+    right: -165px;
+    width: 411px;
+    height: 36px;
+    font-size: 30px;
   }
 }
 
@@ -744,16 +749,16 @@ p {
   }
 
   .navbar__logo {
-    font-size: var(--font-medi-regular);
+    font-size: var(--font-regular);
+  }
+
+  #home {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .home-title {
     height: 24vh;
-  }
-
-  .home-title > h1 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .typed {
@@ -775,7 +780,7 @@ p {
   }
 
   .li__one {
-    padding-top: 100px;
+    padding: 85px 13px 0 13px;
   }
 
   .li__two {
