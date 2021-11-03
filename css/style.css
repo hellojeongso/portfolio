@@ -23,7 +23,7 @@
   /* Font size */
   --font-large: 48px;
   --font-medium: 32px;
-  --font-regular2: 21px;
+  --font-medi-regular: 21px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 15px;
@@ -97,6 +97,18 @@ p {
   margin: 6px 0;
 }
 
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* Navbar */
 #navbar {
   position: fixed;
@@ -155,9 +167,8 @@ p {
   text-align: center;
 }
 
-.home__title {
-  text-align: center;
-  color: black;
+.home-title {
+  height: 30vh;
 }
 
 .home__contact {
@@ -197,18 +208,6 @@ p {
 .home__contact:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-/* Section common */
-.section {
-  padding: 50px;
-  text-align: center;
-  margin: auto;
-}
-
-.section__container {
-  max-width: 1200px;
-  margin: auto;
 }
 
 /* About */
@@ -579,11 +578,11 @@ p {
 @media screen and (max-width: 768px) {
   :root {
     /* Font size */
-    --font-large: 25px;
-    --font-regular2: 16px;
-    --font-medium: 15px;
-    --font-regular: 18px;
-    --font-small: 11px;
+    --font-large: 40px;
+    --font-medium: 28px;
+    --font-medi-regular: 19px;
+    --font-regular: 15px;
+    --font-small: 13px;
     --font-micro: 10px;
   }
 
@@ -621,9 +620,18 @@ p {
     padding: 120px;
   }
 
+  .home-title {
+    height: 26vh;
+  }
   .home__avatar {
     width: 300px;
     height: 300px;
+  }
+
+  .home__contact {
+    padding: 5px;
+    width: 120px;
+    font-size: var(--font-small);
   }
 
   /* About */
@@ -638,10 +646,23 @@ p {
   .about__right {
     text-align: center;
     margin-bottom: 87px;
+    width: 400px;
+  }
+
+  .about__profile {
+    width: 400px;
+  }
+
+  .about__profile > ul {
+    width: 400px;
+  }
+
+  .about__profile > ul > li {
+    width: 400px;
   }
 
   #about {
-    margin-bottom: 10px;
+    margin-bottom: 23px;
   }
 
   .about__profile::after {
@@ -659,12 +680,12 @@ p {
   }
 
   .li__one {
-    font-size: var(--font-regular2);
-    padding-top: 90px;
+    font-size: var(--font-regular);
+    padding-top: 110px;
   }
   .li__two {
     font-size: var(--font-regular);
-    padding-top: 12px;
+    padding-top: 9px;
   }
 
   .li__three {
@@ -673,7 +694,7 @@ p {
   }
 
   #li__title {
-    font-size: var(--font-regular2);
+    font-size: var(--font-medi-regular);
   }
 
   /* Skill */
@@ -712,5 +733,35 @@ p {
     line-height: 40px;
     right: 16px;
     bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  :root {
+    /* Font size */
+    --font-large: 35px;
+    --font-medium: 22px;
+    --font-medi-regular: 15px;
+    --font-regular: 12px;
+    --font-small: 10px;
+    --font-micro: 8px;
+  }
+
+  .home-title {
+    height: 24vh;
+  }
+
+  .typed {
+    font-size: var(--font-medi-regular);
+  }
+
+  .home__contact {
+    margin-top: 32px;
+  }
+
+  .li__one,
+  .li__two,
+  .li__three {
+    font-size: var(--font-medi-regular);
   }
 }

@@ -1,11 +1,10 @@
 // typed.js
 var title = { 
-  strings: ['WELCOME TO MY PORTFOLIO'], 
+  strings: ['정소영 포트폴리오'], 
   typeSpeed: 70, 
   backSpeed: 100, 
   fadeOut: false, 
-  smartBackspace: true, 
-  cursorChar: '_', 
+  smartBackspace: true,  
   loop: true 
 }; 
   
