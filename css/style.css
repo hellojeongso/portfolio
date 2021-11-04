@@ -444,7 +444,7 @@ p {
 /* Work */
 
 #work {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .work__projects {
@@ -490,6 +490,7 @@ p {
 
 .project__description h3 {
   color: var(--color-orange);
+  font-weight: var(--weight-semi-bold);
 }
 
 .project__description h3:after {
