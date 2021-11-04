@@ -56,14 +56,6 @@ a {
   color: var(--color-white);
 }
 
-a:link,
-a:visited,
-a:active,
-a:hover {
-  text-decoration: none;
-  color: var(--color-black);
-}
-
 ul {
   list-style: none;
   padding-left: 0;
@@ -166,10 +158,6 @@ p {
   font-size: 24px;
   color: var(--color-white);
   display: none;
-}
-
-.navbar__logo > a {
-  color: var(--color-white);
 }
 
 /* Home */
@@ -554,10 +542,6 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
-}
-
-.contact__links > a {
-  color: var(--color-white);
 }
 
 .contact__phone,
