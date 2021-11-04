@@ -168,6 +168,10 @@ p {
   display: none;
 }
 
+.navbar__logo > a {
+  color: var(--color-white);
+}
+
 /* Home */
 #home {
   background: url("../imgs/cloud.jpg") center/cover no-repeat;
@@ -550,6 +554,10 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+.contact__links > a {
+  color: var(--color-white);
 }
 
 .contact__phone,
