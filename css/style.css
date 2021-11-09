@@ -1,5 +1,4 @@
 /* Global */
-
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -46,7 +45,6 @@
 }
 
 body {
-  margin: 0;
   font-family: "Nanum Gothic", sans-serif;
   cursor: default;
 }
@@ -54,11 +52,6 @@ body {
 a {
   text-decoration: none;
   color: var(--color-white);
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
 }
 
 /* Typography */
@@ -100,8 +93,8 @@ p {
 /* Section common */
 .section {
   padding: 50px;
-  text-align: center;
   margin: auto;
+  text-align: center;
 }
 
 .section__container {
@@ -112,13 +105,13 @@ p {
 /* Navbar */
 #navbar {
   position: fixed;
-  width: 100%;
   display: flex;
+  width: 100%;
+  padding: 16px;
   justify-content: space-between;
   background-color: transparent;
-  align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  align-items: center;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
 }
@@ -135,6 +128,7 @@ p {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
+
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
@@ -153,17 +147,17 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
+  display: none;
   top: 23px;
   right: 20px;
   font-size: 24px;
   color: var(--color-white);
-  display: none;
 }
 
 /* Home */
 #home {
-  background: url("../imgs/cloud.jpg") center/cover no-repeat;
   padding: 200px 0 200px 0;
+  background: url("../imgs/cloud.jpg") center/cover no-repeat;
   text-align: center;
 }
 
@@ -172,32 +166,32 @@ p {
 }
 
 .home__contact {
+  width: 180px;
+  padding: 10px;
+  margin: 10px;
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   border: 2px solid var(--color-dark-grey);
   border-radius: var(--size-border-radius);
   text-align: center;
-  padding: 10px;
-  width: 180px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 10px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .home__contact span {
-  cursor: pointer;
   display: inline-block;
   position: relative;
+  cursor: pointer;
   transition: 0.5s;
 }
 
 .home__contact span:after {
-  content: "\00bb";
   position: absolute;
-  opacity: 0;
   top: 0;
   right: -20px;
+  content: "\00bb";
+  opacity: 0;
   transition: 0.5s;
 }
 
@@ -234,18 +228,18 @@ p {
 }
 
 .about__profile::after {
-  content: "";
   position: absolute;
-  left: 0;
-  top: 50%;
   width: 0;
   height: 0;
+  margin-top: -10px;
+  margin-left: -20px;
+  left: 0;
+  top: 50%;
+  content: "";
   border: 20px solid transparent;
   border-right-color: #3e4a51;
   border-left: 0;
   border-bottom: 0;
-  margin-top: -10px;
-  margin-left: -20px;
 }
 
 .about__profile > ul {
@@ -256,10 +250,10 @@ p {
 
 .about__profile > ul > li {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 500px;
   height: 300px;
+  left: 0;
+  top: 0;
   font-size: 16px;
   line-height: 2;
 }
@@ -270,13 +264,13 @@ p {
 
 .prev,
 .next {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 25px;
   font-size: var(--font-micro);
   color: var(--color-white);
   background-color: var(--color-full-blue);
   border-radius: 30px;
-  width: 30px;
-  height: 30px;
-  margin-bottom: 25px;
 }
 
 .about__profile > ul > li > p {
@@ -284,13 +278,13 @@ p {
 }
 
 .li__one {
-  font-size: var(--font-regular);
   padding-top: 88px;
+  font-size: var(--font-regular);
 }
 
 .li__two {
-  font-size: var(--font-micro);
   padding-top: 10px;
+  font-size: var(--font-micro);
 }
 
 .li__three {
@@ -309,25 +303,26 @@ p {
 
 .skillset {
   display: flex;
+  margin: 20px 0;
   background-color: var(--color-full-blue);
   color: var(--color-light-white);
-  margin: 20px 0;
 }
 
 .skillset__title {
+  margin-bottom: 20px;
   color: var(--color-white);
   font-weight: var(--weight-semi-bold);
-  margin-bottom: 20px;
 }
 .skillset__left {
+  padding: 20px 40px;
   flex-basis: 60%;
   background-color: var(--color-left-blue);
-  padding: 20px 40px;
 }
 
 .skill {
   margin-bottom: 32px;
 }
+
 .skill__description {
   display: flex;
   justify-content: space-between;
@@ -349,8 +344,8 @@ p {
 }
 
 .tools {
-  background-color: var(--color-right-blue);
   padding: 50px;
+  background-color: var(--color-right-blue);
 }
 
 .etc {
@@ -613,6 +608,7 @@ p {
 
   .navbar__menu.open {
     display: block;
+    margin-top: 20px;
   }
 
   /* Home */
@@ -629,8 +625,8 @@ p {
   }
 
   .home__contact {
-    padding: 5px;
     width: 120px;
+    padding: 5px;
     font-size: var(--font-small);
   }
 
@@ -644,9 +640,9 @@ p {
   }
 
   .about__right {
-    text-align: center;
-    margin-bottom: 87px;
     width: 400px;
+    margin-bottom: 87px;
+    text-align: center;
   }
 
   .about__profile {
@@ -680,17 +676,18 @@ p {
   }
 
   .li__one {
+    padding-top: 101px;
     font-size: var(--font-regular);
-    padding-top: 113px;
   }
+
   .li__two {
-    font-size: var(--font-regular);
     padding-top: 9px;
+    font-size: var(--font-regular);
   }
 
   .li__three {
-    font-size: var(--font-regular);
     padding-top: 80px;
+    font-size: var(--font-regular);
   }
 
   #li__title {
@@ -712,6 +709,7 @@ p {
   #work {
     margin-bottom: 15px;
   }
+
   .project {
     flex-grow: 1;
   }
@@ -732,12 +730,12 @@ p {
   /* Scroll */
 
   .arrow-up {
-    background-color: transparent;
-    color: black;
-    bottom: 15px;
-    right: -165px;
     width: 411px;
     height: 36px;
+    right: -165px;
+    bottom: 15px;
+    background-color: transparent;
+    color: black;
     font-size: 30px;
   }
 }
