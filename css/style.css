@@ -81,6 +81,7 @@ h3 {
   font-weight: var(--font-regular);
   color: var(--color-black);
   margin: 4px 0;
+  line-height: 1.5;
 }
 
 p {
@@ -163,6 +164,7 @@ p {
 
 .home-title {
   height: 30vh;
+  line-height: 1.5;
 }
 
 .home__contact {
@@ -208,7 +210,7 @@ p {
 
 .aboutset {
   display: flex;
-  margin-top: 45px;
+  margin-top: 53px;
 }
 
 #about h1 {
@@ -303,7 +305,7 @@ p {
 
 .skillset {
   display: flex;
-  margin: 20px 0;
+  margin: 30px 0;
   background-color: var(--color-full-blue);
   color: var(--color-light-white);
 }
@@ -448,6 +450,10 @@ p {
   justify-content: center;
 }
 
+.work__box {
+  margin: 20px;
+}
+
 .project {
   position: relative;
   display: flex;
@@ -462,6 +468,10 @@ p {
   color: var(--color-deep-blue);
 }
 
+#work > h3 {
+  color: var(--color-deep-blue);
+  font-weight: 600;
+}
 .project__img {
   max-width: 100%;
   max-height: 100%;
@@ -469,18 +479,19 @@ p {
 
 .project__description {
   position: absolute;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
   opacity: 0;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
-  padding: 20px;
 }
 
 .project__description h3 {
@@ -523,6 +534,7 @@ p {
 .contact__phone,
 .contact__rights {
   color: var(--color-white);
+  line-height: 1.5;
 }
 
 .contact__title {
@@ -582,7 +594,7 @@ p {
   }
 
   .section {
-    padding: 16px;
+    padding: 30px;
   }
 
   /* Navbar */
@@ -627,6 +639,7 @@ p {
   .home__contact {
     width: 120px;
     padding: 5px;
+    margin: 40px;
     font-size: var(--font-small);
   }
 
@@ -675,6 +688,10 @@ p {
     margin-left: 0px;
   }
 
+  #li__title {
+    font-weight: 600;
+  }
+
   .li__one {
     padding-top: 101px;
     font-size: var(--font-regular);
@@ -690,10 +707,6 @@ p {
     font-size: var(--font-regular);
   }
 
-  #li__title {
-    font-size: var(--font-medi-regular);
-  }
-
   /* Skill */
   .skillset {
     flex-direction: column;
@@ -702,12 +715,21 @@ p {
   .skill__description,
   .tools__list,
   .etc__list {
-    font-size: 13px;
+    font-size: var(--font-regular);
+    line-height: 1.5;
+  }
+
+  .skillset__title {
+    font-size: var(--font-medi-regular);
   }
 
   /* Work */
   #work {
     margin-bottom: 15px;
+  }
+
+  .work__box {
+    margin: 5px;
   }
 
   .project {
@@ -777,18 +799,18 @@ p {
     font-size: var(--font-medium);
   }
   .li__one,
-  .li__two,
   .li__three {
     font-size: var(--font-medi-regular);
   }
 
   .li__one {
-    padding: 85px 13px 0 13px;
+    padding: 70px 13px 0 13px;
   }
 
   .li__two {
-    padding-top: 0px;
+    padding-top: 10px;
     margin: 0px;
+    font-size: var(--font-regular);
   }
 
   .li__three {
@@ -805,7 +827,12 @@ p {
   .project__description > h3 {
     font-size: var(--font-medi-regular);
   }
+
+  .contact__links {
+    font-size: var(--font-medium);
+  }
+
   .contact__rights {
-    font-size: var(--font-regular);
+    font-size: var(--font-small);
   }
 }
